@@ -1,0 +1,17 @@
+// -*- mode: protobuf -*-
+
+// This package defines the format of the time.
+
+package model;
+
+message TimeStruct {
+  required int32 year = 1;
+  required int32 month = 2;
+  required int32 day = 3;
+  required int32 hour = 4;
+  required int32 minitue = 5;
+  required int32 second = 6;
+
+  optional int32 nsec = 7;
+  optional string format = 8;
+};
